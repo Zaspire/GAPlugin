@@ -54,4 +54,12 @@
         <framework src="CoreData.framework" />
         <framework src="SystemConfiguration.framework" />
     </platform>
+
+    <platform name="ubuntu">
+        <dependency id="org.apache.cordova.device" />
+
+        <js-module src="www/ubuntu/GAPlugin.js" name="GAPlugin1">
+            <merges target="plugins.gaPlugin" />
+        </js-module>
+    </platform>
 </plugin>
